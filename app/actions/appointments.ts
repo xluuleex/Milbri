@@ -29,7 +29,7 @@ export async function createAppointment(
   const time = String(formData.get("time") ?? "").trim()
   const notes = String(formData.get("notes") ?? "").trim()
 
-  if (!customerName || !email || !phone || !service || !date || !time) {
+  if (!customerName || !phone || !service || !date || !time) {
     return { success: false, message: "Por favor completá todos los campos obligatorios." }
   }
 
@@ -60,7 +60,7 @@ export async function createAppointment(
 
   await sql`
     INSERT INTO appointments (customer_name, email, phone, service, appointment_date, appointment_time, notes)
-    VALUES (${customerName}, ${email}, ${phone}, ${service}, ${date}, ${time}, ${notes || null})
+    VALUES (${customerName}, ${email || null}, ${phone}, ${service}, ${date}, ${time}, ${notes || null})
   `
 
   return {

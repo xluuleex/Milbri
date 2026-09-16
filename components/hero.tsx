@@ -12,11 +12,11 @@ export function Hero() {
           </span>
           <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
             Milbri
-            <span className="block text-primary">Nails Studio</span>
+            <span className="block text-primary">Nails</span>
           </h1>
           <p className="max-w-md text-pretty text-lg text-muted-foreground">
-            Manos impecables y diseños únicos. Reservá tu turno online en segundos y elegí el día, horario y tipo de
-            manicura que más te gusta.
+            Manos impecables y diseños únicos. Reservá tu turno online en segundos y elegí el día, horario y servicio que
+            más te gusta. Turnos de 14 a 18 hs.
           </p>
           <a
             href="#reservar"
@@ -25,10 +25,10 @@ export function Hero() {
             Reservar turno
           </a>
         </div>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-primary/10">
+        <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-3xl bg-accent/40 shadow-xl shadow-primary/10">
           <Image
-            src="/images/hero-manicure.png"
-            alt="Manos con manicura prolija en tonos rosados sobre superficie de mármol"
+            src="/images/milbri-logo.jpeg"
+            alt="Logo de Milbri Nails: un elefantito bebé con una flor rosa sobre fondo rosa"
             fill
             priority
             className="object-cover"

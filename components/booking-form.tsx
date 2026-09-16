@@ -73,8 +73,8 @@ export function BookingForm() {
         </Field>
       </div>
 
-      <Field label="Email" htmlFor="email">
-        <input id="email" name="email" type="email" required placeholder="tucorreo@email.com" className="input-base" />
+      <Field label="Email (opcional)" htmlFor="email">
+        <input id="email" name="email" type="email" placeholder="tucorreo@email.com" className="input-base" />
       </Field>
 
       <Field label="Tipo de manicura" htmlFor="service">

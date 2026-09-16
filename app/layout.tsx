@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Milbri Nails Studio | Reservá tu turno de manicura online',
+  title: 'Milbri Nails | Reservá tu turno de manicura online',
   description:
-    'Reservá tu turno de manicura en Milbri Nails Studio. Elegí día, horario y tipo de manicura: clásica, semipermanente, kapping o nail art.',
+    'Reservá tu turno en Milbri Nails. Elegí día y horario (14 a 18 hs) y servicio: semipermanente, kapping gel, extensiones en tips soft gel o retiro de manicura.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   colorScheme: 'light dark',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: '(prefers-color-scheme: light)', color: '#fce7ef' },
+    { media: '(prefers-color-scheme: dark)', color: '#2a1f26' },
   ],
 }
 
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

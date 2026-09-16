@@ -1,7 +1,8 @@
+import Image from "next/image"
 import { Hero } from "@/components/hero"
 import { ServicesSection } from "@/components/services-section"
 import { BookingForm } from "@/components/booking-form"
-import { Sparkles, MapPin, Phone } from "lucide-react"
+import { MapPin, Phone } from "lucide-react"
 
 export default function Page() {
   return (
@@ -9,8 +10,14 @@ export default function Page() {
       <header className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <span className="flex items-center gap-2 text-lg font-semibold">
-            <Sparkles className="size-5 text-primary" aria-hidden="true" />
-            Milbri
+            <Image
+              src="/images/milbri-logo.jpeg"
+              alt="Logo Milbri Nails"
+              width={36}
+              height={36}
+              className="size-9 rounded-full object-cover"
+            />
+            Milbri Nails
           </span>
           <nav className="flex items-center gap-6 text-sm">
             <a href="#servicios" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -44,8 +51,14 @@ export default function Page() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <span className="flex items-center gap-2 text-base font-semibold text-foreground">
-            <Sparkles className="size-5 text-primary" aria-hidden="true" />
-            Milbri Nails Studio
+            <Image
+              src="/images/milbri-logo.jpeg"
+              alt="Logo Milbri Nails"
+              width={32}
+              height={32}
+              className="size-8 rounded-full object-cover"
+            />
+            Milbri Nails
           </span>
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-6">
             <span className="inline-flex items-center gap-2">

@@ -8,8 +8,7 @@ export function ServicesSection() {
       <div className="mb-10 flex flex-col gap-3 text-center">
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Nuestros servicios</h2>
         <p className="mx-auto max-w-lg text-pretty text-muted-foreground">
-          Elegí el tipo de manicura ideal para vos. Todos los servicios incluyen limado, cuidado de cutículas e
-          hidratación.
+          Elegí el servicio ideal para vos. Atendemos con turnos de lunes a viernes entre las 14 y las 18 hs.
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
